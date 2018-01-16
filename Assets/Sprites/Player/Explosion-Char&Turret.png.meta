@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: fea50ccda778a41419eaf433a548515d
+timeCreated: 1511961828
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Explosion-Char&Turret_0
+    21300002: Explosion-Char&Turret_1
+    21300004: Explosion-Char&Turret_2
+    21300006: Explosion-Char&Turret_3
+    21300008: Explosion-Char&Turret_4
+    21300010: Explosion-Char&Turret_5
+    21300012: Explosion-Char&Turret_6
+    21300014: Explosion-Char&Turret_7
+    21300016: Explosion-Char&Turret_8
+    21300018: Explosion-Char&Turret_9
+    21300020: Explosion-Char&Turret_10
+    21300022: Explosion-Char&Turret_11
+    21300024: Explosion-Char&Turret_12
+    21300026: Explosion-Char&Turret_13
+    21300028: Explosion-Char&Turret_14
+    21300030: Explosion-Char&Turret_15
+    21300032: Explosion-Char&Turret_16
+    21300034: Explosion-Char&Turret_17
+    21300036: Explosion-Char&Turret_18
+    21300038: Explosion-Char&Turret_19
+    21300040: Explosion-Char&Turret_20
+    21300042: Explosion-Char&Turret_21
+    21300044: Explosion-Char&Turret_22
+    21300046: Explosion-Char&Turret_23
+    21300048: Explosion-Char&Turret_24
+    21300050: Explosion-Char&Turret_25
+    21300052: Explosion-Char&Turret_26
+    21300054: Explosion-Char&Turret_27
+    21300056: Explosion-Char&Turret_28
+    21300058: Explosion-Char&Turret_29
+    21300060: Explosion-Char&Turret_30
+    21300062: Explosion-Char&Turret_31
+    21300064: Explosion-Char&Turret_32
+    21300066: Explosion-Char&Turret_33
+    21300068: Explosion-Char&Turret_34
+    21300070: Explosion-Char&Turret_35
+    21300072: Explosion-Char&Turret_36
+    21300074: Explosion-Char&Turret_37
+    21300076: Explosion-Char&Turret_38
+    21300078: Explosion-Char&Turret_39
+    21300080: Explosion-Char&Turret_40
+    21300082: Explosion-Char&Turret_41
+    21300084: Explosion-Char&Turret_42
+    21300086: Explosion-Char&Turret_43
+    21300088: Explosion-Char&Turret_44
+    21300090: Explosion-Char&Turret_45
+    21300092: Explosion-Char&Turret_46
+    21300094: Explosion-Char&Turret_47
+    21300096: Explosion-Char&Turret_48
+    21300098: Explosion-Char&Turret_49
+    21300100: Explosion-Char&Turret_50
+    21300102: Explosion-Char&Turret_51
+    21300104: Explosion-Char&Turret_52
+    21300106: Explosion-Char&Turret_53
+    21300108: Explosion-Char&Turret_54
+    21300110: Explosion-Char&Turret_55
+    21300112: Explosion-Char&Turret_56
+    21300114: Explosion-Char&Turret_57
+    21300116: Explosion-Char&Turret_58
+    21300118: Explosion-Char&Turret_59
+    21300120: Explosion-Char&Turret_60
+    21300122: Explosion-Char&Turret_61
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 400
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Explosion-Char&Turret_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Explosion-Char&Turret_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Explosion-Char&Turret_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Explosion-Char&Turret_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1920
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Explosion-Char&Turret_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Explosion-Char&Turret_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Explosion-Char&Turret_6
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Explosion-Char&Turret_7
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Explosion-Char&Turret_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Explosion-Char&Turret_9
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Explosion-Char&Turret_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Explosion-Char&Turret_11
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Explosion-Char&Turret_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Explosion-Char&Turret_13
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Explosion-Char&Turret_14
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 0
+        width: 636
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - UpDown Rail
+  - RightLeft Rail
+  - FourDirections Rail
+  - New tag
+  - FootObject
+  - Action Zone
+  - Choice UpDown
+  - Choice RightLeft
+  - RightOnly Rail
+  - LeftOnly Rail
+  - UpOnly Rail
+  - DownOnly Rail
+  - Wall
+  - LeftDown Rail
+  - DownRight Rail
+  - DownLeft Rail
+  - UpLeft Rail
+  - UpRight Rail
+  - Bullet
+  - KillerWall
+  - Enemy
+  - Child
+  - UpDownLeft Rail
+  - UpLeftRight Rail
+  - UpDownRight Rail
+  - DownRightLeft Rail
+  - LevelSwitcher
+  - Melee
+  - Tank
+  - DeathPlatform
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
