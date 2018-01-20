@@ -34,6 +34,7 @@ TagManager:
   - Melee
   - Tank
   - DeathPlatform
+  - SoundTrigger
   layers:
   - Default
   - TransparentFX
@@ -70,4 +71,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Enemy
+    uniqueID: 245537667
     locked: 0

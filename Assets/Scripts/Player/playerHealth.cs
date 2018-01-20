@@ -12,6 +12,8 @@ public class playerHealth : MonoBehaviour {
 
     public GameObject h1, h2, h3, h4, h5;
 
+    //public GameObject healthGUI;
+
     public int hp = 5;
 
     public bool flashActive = false;
@@ -36,29 +38,29 @@ public class playerHealth : MonoBehaviour {
     {
         //HeartUI.sprite = HealthSprites[hp];
 
-        if (hp == 8 || hp == 9)
+        if ((hp == 8 || hp == 9) && h5.activeInHierarchy == true)
         {
+            //healthGUI = h4;
             h5.SetActive(false);
-            h4.SetActive(false);
+            h4.SetActive(true);
         }
-        if (hp == 6 || hp == 7)
+        if (hp == 6 || hp == 7 && h4.activeInHierarchy == true)
         {
+            //healthGUI = h3;
             h4.SetActive(false);
             h3.SetActive(true);
         }
-        if (hp == 5 || hp == 6)
+        if (hp == 4 || hp == 3 && h3.activeInHierarchy == true)
         {
+            //healthGUI = h2;
             h3.SetActive(false);
             h2.SetActive(true);
         }
-        if (hp == 3 || hp == 4)
+        if (hp == 2 || hp == 1 && h2.activeInHierarchy == true)
         {
+            //healthGUI = h1;
             h2.SetActive(false);
             h1.SetActive(true);
-        }
-        if (hp == 1 || hp == 2)
-        {
-            h1.SetActive(false);
         }
 
         if (flashActive)
@@ -99,7 +101,7 @@ public class playerHealth : MonoBehaviour {
             flashActive = true;
             flashCounter = flashLength;
         }
-        if (col.CompareTag("Child") || col.CompareTag ("Tank"))
+        if (col.CompareTag("Child") || col.CompareTag ("Tank") || col.CompareTag("Melee"))
         {
             SceneManager.LoadScene("gameover");
         }

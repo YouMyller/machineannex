@@ -8,6 +8,7 @@ public class rammerAttack : MonoBehaviour {
     //public bool spawner = false;
     public GameObject[] spawnedEnemies;
     public GameObject me;
+    public bool animate = false;
     //public GameObject[] movedDoors;
 
     // Use this for initialization
@@ -24,6 +25,12 @@ public class rammerAttack : MonoBehaviour {
             spawnedEnemies[0].GetComponent<enemyMover>().enabled = true;
             spawnedEnemies[1].GetComponent<enemyMover>().enabled = true;
             spawnedEnemies[2].GetComponent<enemyMover>().enabled = true;
+            if (animate == true)
+            {
+                spawnedEnemies[0].GetComponentInChildren<Animator>().enabled = true;
+                spawnedEnemies[1].GetComponentInChildren<Animator>().enabled = true;
+                spawnedEnemies[2].GetComponentInChildren<Animator>().enabled = true;
+            }
         }
 
        /* if (spawner == true)

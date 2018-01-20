@@ -19,7 +19,7 @@ public class TheEnd : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Ending");
+            SceneManager.LoadScene("level_2");
         }
     }
 }

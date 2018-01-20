@@ -23,7 +23,7 @@ public class triggerDoorSecond : MonoBehaviour {
     {
         if (!triggerObject.activeInHierarchy || !triggerObject)
         {
-            Debug.Log("Vittu");
+            //Debug.Log("Vittu");
                 moveTime -= Time.deltaTime;
                 if (moveTime >= 0)
                 {

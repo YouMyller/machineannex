@@ -29,12 +29,12 @@ public class triggerDoor : MonoBehaviour {
             spawnTimer -= Time.deltaTime;
             //Debug.Log("Hui");
             //if (enemyGroup.activeInHierarchy == true) //(enemyGroup.GetComponent<enemyMover>().enabled == false) //jotain lisää ehtoja
-            Debug.Log("Jotain täennkin");
+            //Debug.Log("Jotain täennkin");
             //enemyGroup.SetActive(true);
             moveTime -= Time.deltaTime;
             if (moveTime > 0)
             {
-                Debug.Log("Liikkuminen");
+                //Debug.Log("Liikkuminen");
                 transform.Translate(Vector2.up * speed);
             }
             if (moveTime < 0)
