@@ -101,6 +101,7 @@ public class RammerAttack : MonoBehaviour {
                         }
                         //rb.MovePosition(transform.position + transform.up * runSpeed * Time.smoothDeltaTime);
                     }
+                    //if doesn't find player, goes to the MoveToPoint method
                 }
             }
 
@@ -154,7 +155,6 @@ public class RammerAttack : MonoBehaviour {
         }
         if (collision.gameObject.tag == "Wall")
         {
-            Debug.Log("Hits well enough to feel it");
             MoveToPoint();
         }
     }
@@ -175,7 +175,7 @@ public class RammerAttack : MonoBehaviour {
 
                 minDist = dist;
             }
-            //wallDistance = Vector2.Distance(transform.position, wallObj.transform.position);
         }
+        //Stop this from looping (?), make go to next point by checking with raycast
     }
 }
