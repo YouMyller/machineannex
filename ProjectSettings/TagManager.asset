@@ -35,6 +35,8 @@ TagManager:
   - Tank
   - DeathPlatform
   - SoundTrigger
+  - PathPoint
+  - Waiting
   layers:
   - Default
   - TransparentFX
