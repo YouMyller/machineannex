@@ -18,7 +18,7 @@ public class RammerAggro : MonoBehaviour {
     public float turnSpeed = 5;
     public float runSpeed = .1f;
     private float aggroRange = 10;
-    float distance;
+    //float distance;
 
     private bool findPlayer = true;
     private bool findPath = false;
@@ -74,7 +74,7 @@ public class RammerAggro : MonoBehaviour {
 
                         //turning = false;
                         //moving = true;
-                        distance = Vector2.Distance(transform.position, targetObject.transform.position);
+                        float distance = Vector2.Distance(transform.position, targetObject.transform.position);
                     }
                     if (targetObject.activeInHierarchy)
                     {
