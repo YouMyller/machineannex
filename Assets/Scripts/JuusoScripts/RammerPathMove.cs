@@ -15,9 +15,10 @@ public class RammerPathMove : MonoBehaviour {
 
     public float runSpeed;
     public float turnSpeed;
-    private float aggroRange = 5;
+    private float aggroRange = 8;
     float distanceTravelled;
     float distance;
+    private float timeWithoutPath = 3;
 
     public int currentWP;
 
@@ -32,11 +33,18 @@ public class RammerPathMove : MonoBehaviour {
     {
         currentWP = 0;
         transform.position = Waypoints[currentWP].position;
+        rotateTo = Waypoints[currentWP + 1];
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        Vector2 dir = rotateTo.position - transform.position;
+
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, turnSpeed * Time.deltaTime);
+
         if (moving == true)
         {
             transform.Translate(runSpeed, 0, 0);
@@ -44,15 +52,11 @@ public class RammerPathMove : MonoBehaviour {
 
         if (Vector2.Distance(player.position, transform.position) < aggroRange)
         {
+            rotateTo = player;
+
             Sight.origin = new Vector3(transform.position.x, transform.position.y, transform.position.z);
             Sight.direction = transform.right;
             RaycastHit hit;
-
-            Vector2 dir = player.position - transform.position;
-
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, turnSpeed * Time.deltaTime);
 
             Debug.DrawRay(Sight.origin, transform.right * aggroRange, Color.red);
 
@@ -94,10 +98,11 @@ public class RammerPathMove : MonoBehaviour {
                 }
             }
         }
-        else
+        else if (Vector2.Distance(player.position, transform.position) > aggroRange)
         {
             if (transform.position == Waypoints[currentWP].position)
             {
+                timeWithoutPath = 3;
                 currentWP++;
             }
             if (currentWP >= Waypoints.Length)
@@ -105,7 +110,31 @@ public class RammerPathMove : MonoBehaviour {
                 currentWP = 1;
             }
             transform.position = Vector3.MoveTowards(transform.position, Waypoints[currentWP].position, 5 * Time.deltaTime);
+            rotateTo = Waypoints[currentWP];
+
+            /*if (transform.position != Waypoints[currentWP].position)
+            {
+                timeWithoutPath -= Time.deltaTime;
+            }
+
+            if (timeWithoutPath <= 0)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, Waypoints[currentWP].position, 5 * Time.deltaTime);
+            }*/
         }
+
+        /*else
+        {
+            Debug.Log("No player, no path.");
+            FindNearestPath();
+            Vector2 dir = player.position - transform.position;
+
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, turnSpeed * Time.deltaTime);
+
+            transform.Translate(runSpeed, 0, 0);
+        }*/
     }
 
     public void FindNearestPath()
@@ -129,7 +158,7 @@ public class RammerPathMove : MonoBehaviour {
     {
         if (collision.gameObject.tag == "Wall")
         {
-            FindNearestPath();
+            //FindNearestPath();
         }
     }
 }

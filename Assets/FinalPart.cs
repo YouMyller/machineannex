@@ -23,26 +23,26 @@ public class FinalPart : MonoBehaviour {
         }
         if (spawnTime <= 8 && spawnTime >= 6)
         {
-            spawnedEnemies[0].GetComponent<RammerAttack>().enabled = true;
+            spawnedEnemies[0].GetComponent<RammerPathMove>().enabled = true;
         }
         if (spawnTime <= 6 && spawnTime >= 4)
         {
-            spawnedEnemies[1].GetComponent<RammerAttack>().enabled = true;
+            spawnedEnemies[1].GetComponent<RammerPathMove>().enabled = true;
             movedDoors[0].GetComponent<moveDoor>().enabled = true;
         }
         if (spawnTime <= 4 && spawnTime >= 3)
         {
-            spawnedEnemies[2].GetComponent<RammerAttack>().enabled = true;
+            spawnedEnemies[2].GetComponent<RammerPathMove>().enabled = true;
             movedDoors[1].GetComponent<moveDoor>().enabled = true;
         }
         if (spawnTime <= 4 && spawnTime >= 3)
         {
-            spawnedEnemies[3].GetComponent<RammerAttack> ().enabled = true;
+            spawnedEnemies[3].GetComponent<RammerPathMove> ().enabled = true;
             movedDoors[2].GetComponent<moveDoor>().enabled = true;
         }
         if (spawnTime <= 2 && spawnTime >= 1)
         {
-            spawnedEnemies[4].GetComponent<RammerAttack>().enabled = true;
+            spawnedEnemies[4].GetComponent<RammerPathMove>().enabled = true;
             movedDoors[3].GetComponent<moveDoor>().enabled = true;
             Destroy(gameObject);
         }
